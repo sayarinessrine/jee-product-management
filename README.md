@@ -1,1 +1,119 @@
-# Product Management System | Java EE A robust web-based product management system built using **Java EE**, designed to handle product and category administration through a secure and scalable architecture. This application enables administrators to manage inventory data efficiently using complete CRUD operations, authentication, and persistent database storage. ## About The Project This project was developed to apply core software engineering concepts in a real-world business scenario, including: - Enterprise web application development - MVC architecture implementation - Database design and integration - Session-based authentication - Backend request lifecycle management The system focuses on maintainability, modularity, and clean separation of concerns. ## Technology Stack | Layer | Technologies | |-------|--------------| | Language | Java | | Backend | Java EE, Servlets | | Frontend | JSP, HTML, CSS | | Database | MySQL | | Persistence | JDBC | | Server | Apache Tomcat | | Build Tool | Maven | ## Application Architecture The application follows the **MVC (Model-View-Controller)** design pattern: ### Model Handles business logic and data representation. ### View Implemented using JSP pages to render dynamic content. ### Controller Servlets process HTTP requests and coordinate communication between View and Model. ## Business Functionalities The platform allows administrators to: - Manage product lifecycle - Organize products by category - Maintain consistent database records - Access secured administration pages - Perform operations in real time ### Build Project mvn clean install ### Deploy Application Deploy the generated WAR file on Apache Tomcat. ### Access Application http://localhost:8080/Projet_JEE ## Future Enhancements Potential improvements for future versions: - Spring Boot migration - REST API integration - Advanced search & filtering - Role-based authorization - Password encryption - Responsive UI redesign ## Engineering Concepts Applied This project demonstrates practical implementation of: - Object-Oriented Programming - MVC Design Pattern - Layered Architecture - CRUD Operations - Authentication & Authorization - Database Connectivity - Session Management ## Author ### Nessrine Sayari Software Engineering Student at ESPRIT Aspiring Backend Engineer focused on Java, Web Technologies, and Scalable Software Architecture.
+# Product Management System
+
+A Java EE web application for managing products and categories through a centralized administration interface.
+
+The application provides CRUD operations, authentication mechanisms, and database persistence using Java Enterprise technologies.
+
+## Overview
+
+This project was developed to explore server-side web development concepts and enterprise application architecture using Java EE.
+
+The system enables administrators to manage products and categories while ensuring data consistency through a relational database.
+
+## Features
+
+- Product management
+  - Create products
+  - Update products
+  - Delete products
+  - View product details
+
+- Category management
+  - Create categories
+  - Update categories
+  - Delete categories
+  - View category details
+
+- Authentication
+  - Administrator login
+  - Logout functionality
+  - Session management
+
+- Database integration
+  - Persistent storage using MySQL
+  - JDBC connectivity
+
+## Architecture
+
+The application follows a layered architecture inspired by the MVC pattern.
+
+Presentation Layer (JSP)
+        │
+        ▼
+Controller Layer (Servlets)
+        │
+        ▼
+Business Logic
+        │
+        ▼
+Persistence Layer (JDBC)
+        │
+        ▼
+MySQL Database
+
+## Tech Stack
+
+| Technology | Description |
+|------------|------------|
+| Java | Core language |
+| Java EE | Enterprise web development |
+| Servlets | Request processing |
+| JSP | User interface |
+| JDBC | Database access |
+| MySQL | Relational database |
+| Maven | Dependency management |
+| Apache Tomcat | Application server |
+
+## Project Structure
+src
+└── main
+    ├── java
+    │   └── com.example
+    │       ├── models
+    │       └── servlets
+    │
+    ├── resources
+    └── webapp
+
+
+## Getting Started
+
+### Prerequisites
+
+- Java 17+
+- Maven
+- MySQL
+- Apache Tomcat
+
+### Installation
+
+Clone the repository:
+
+bash
+git clone https://github.com/sayarinessrine/jee-product-management.git
+
+
+Build the project:
+
+bash
+mvn clean install
+
+
+Deploy the generated WAR file on Apache Tomcat.
+
+## Future Improvements
+
+- RESTful API migration
+- Spring Boot implementation
+- JWT Authentication
+- Role-based access control
+- Docker containerization
+- Automated testing
+
+## Author
+
+**Nessrine Sayari**
+
+Software Engineering Student at ESPRIT
+
+Backend Development • Software Architecture • Cloud Computing
